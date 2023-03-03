@@ -4,7 +4,7 @@ pipeline {
     stages {
         stage('Verify Branch') {
             steps {
-               echo 'Hello world'
+               sh(script: ' echo hello world')
             }
         }
 /*         stage('Docker Build') {
