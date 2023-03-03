@@ -4,7 +4,7 @@ pipeline {
     stages {
         stage('Verify Branch') {
             steps {
-               sh(script: ' echo hello world')
+               sh(script: ' echo $GIT_BRANCH')
             }
         }
 /*         stage('Docker Build') {
